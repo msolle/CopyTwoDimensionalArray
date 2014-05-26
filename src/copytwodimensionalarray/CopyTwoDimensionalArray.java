@@ -15,11 +15,10 @@ public class CopyTwoDimensionalArray {
      * @return copy of provided array
      */
     public float[][]copyTwoDimensionalArray(float[][]input) {
-        for(float [] b : input) {
-            for(float num : b) {
-                System.out.println(num);
-            }
+        float[][] retArray = new float[input.length][];
+        for(int i = 0; i < input.length; i++) {
+            retArray[i] = input[i].clone();
         }
-        return null;
+        return retArray;
     }
 }
