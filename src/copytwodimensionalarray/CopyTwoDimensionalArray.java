@@ -29,7 +29,7 @@ public class CopyTwoDimensionalArray {
     
         /**
      * 
-     * @param input two-dimensional array to be printed
+     * Prints out contents of two-dimensional array with braces
      */
     public void printTwoDimensionalArray() {
         System.out.print("{");
