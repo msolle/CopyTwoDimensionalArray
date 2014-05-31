@@ -9,24 +9,7 @@ package copytwodimensionalarray;
  */
 public class CopyTwoDimensionalArrayTester {
 
-    /**
-     * 
-     * @param input two-dimensional array to be printed
-     */
-    public static void printTwoDimensionalArray(float[][] input) {
-        System.out.print("{");
-        for(int i = 0; i < input.length; i++) {
-            System.out.print("{");
-            for(int j = 0; j < input[i].length; j++) {
-                System.out.print(input[i][j]);
-                if(j < (input[i].length - 1)) {
-                    System.out.print(",");
-                }
-            }
-            System.out.print("}");
-        }
-        System.out.println("}");
-    }
+
     
     
     /**
@@ -39,17 +22,14 @@ public class CopyTwoDimensionalArrayTester {
         float[][] testThree = {{1.1f},{2.2f},{3.3f},{4.4f},{5.5f},{6.6f},{7.7f}};
         
         //testOne
-        CopyTwoDimensionalArray ctdaOne = new CopyTwoDimensionalArray();
-        float[][] testOneReturned = ctdaOne.copyTwoDimensionalArray(testOne);
-        printTwoDimensionalArray(testOneReturned);
+        CopyTwoDimensionalArray ctdaOne = new CopyTwoDimensionalArray(testOne);
+        ctdaOne.printTwoDimensionalArray();
         //testTwo
-        CopyTwoDimensionalArray ctdaTwo = new CopyTwoDimensionalArray();
-        float[][] testTwoReturned = ctdaTwo.copyTwoDimensionalArray(testTwo);
-        printTwoDimensionalArray(testTwoReturned);
+        CopyTwoDimensionalArray ctdaTwo = new CopyTwoDimensionalArray(testTwo);
+        ctdaOne.printTwoDimensionalArray();
         //testThree
-        CopyTwoDimensionalArray ctdaThree = new CopyTwoDimensionalArray();
-        float[][] testThreeReturned = ctdaThree.copyTwoDimensionalArray(testThree);
-        printTwoDimensionalArray(testThreeReturned);
+        CopyTwoDimensionalArray ctdaThree = new CopyTwoDimensionalArray(testThree);
+        ctdaOne.printTwoDimensionalArray();
                 
     }
 }

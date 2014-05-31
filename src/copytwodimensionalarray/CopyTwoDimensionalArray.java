@@ -8,6 +8,11 @@ package copytwodimensionalarray;
  * @author Matt
  */
 public class CopyTwoDimensionalArray {
+    float [][] mArray;
+    
+    CopyTwoDimensionalArray(float[][]arr) {
+        mArray = arr;
+    }
     
     /**
      * 
@@ -20,5 +25,24 @@ public class CopyTwoDimensionalArray {
             retArray[i] = input[i].clone();
         }
         return retArray;
+    }
+    
+        /**
+     * 
+     * @param input two-dimensional array to be printed
+     */
+    public void printTwoDimensionalArray() {
+        System.out.print("{");
+        for (float[] loopedInput : mArray) {
+            System.out.print("{");
+            for (int j = 0; j < loopedInput.length; j++) {
+                System.out.print(loopedInput[j]);
+                if (j < (loopedInput.length - 1)) {
+                    System.out.print(",");
+                }
+            }
+            System.out.print("}");
+        }
+        System.out.println("}");
     }
 }
