@@ -9,7 +9,7 @@ package copytwodimensionalarray;
  */
 public class CopyTwoDimensionalArray {
     float [][] mArray;
-    
+       
     CopyTwoDimensionalArray(float[][]arr) {
         mArray = arr;
     }

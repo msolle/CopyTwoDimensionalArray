@@ -23,13 +23,22 @@ public class CopyTwoDimensionalArrayTester {
         
         //testOne
         CopyTwoDimensionalArray ctdaOne = new CopyTwoDimensionalArray(testOne);
+        CopyTwoDimensionalArray ctdaRetOne = new CopyTwoDimensionalArray(ctdaOne.copyTwoDimensionalArray(testOne));
         ctdaOne.printTwoDimensionalArray();
+        ctdaRetOne.printTwoDimensionalArray();
+        
         //testTwo
         CopyTwoDimensionalArray ctdaTwo = new CopyTwoDimensionalArray(testTwo);
-        ctdaOne.printTwoDimensionalArray();
+        CopyTwoDimensionalArray ctdaRetTwo = new CopyTwoDimensionalArray(ctdaTwo.copyTwoDimensionalArray(testTwo));
+        ctdaTwo.printTwoDimensionalArray();
+        ctdaRetTwo.printTwoDimensionalArray();
+        
         //testThree
         CopyTwoDimensionalArray ctdaThree = new CopyTwoDimensionalArray(testThree);
-        ctdaOne.printTwoDimensionalArray();
+        CopyTwoDimensionalArray ctdaRetThree = new CopyTwoDimensionalArray(ctdaThree.copyTwoDimensionalArray(testThree));
+        ctdaThree.printTwoDimensionalArray();
+        ctdaRetThree.printTwoDimensionalArray();
+        
                 
     }
 }
