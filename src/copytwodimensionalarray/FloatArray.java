@@ -7,10 +7,10 @@ package copytwodimensionalarray;
  * 
  * @author Matt
  */
-public class CopyTwoDimensionalArray {
+public class FloatArray {
     float [][] mArray;
        
-    CopyTwoDimensionalArray(float[][]arr) {
+    FloatArray(float[][]arr) {
         mArray = arr;
     }
     
@@ -19,7 +19,7 @@ public class CopyTwoDimensionalArray {
      * @param input two-dimensional array to be copied
      * @return copy of provided array
      */
-    public float[][]copyTwoDimensionalArray(float[][]input) {
+    public float[][]copy(float[][]input) {
         float[][] retArray = new float[input.length][];
         for(int i = 0; i < input.length; i++) {
             retArray[i] = input[i].clone();
@@ -31,7 +31,7 @@ public class CopyTwoDimensionalArray {
      * 
      * Prints out contents of two-dimensional array with braces
      */
-    public void printTwoDimensionalArray() {
+    public void print() {
         System.out.print("{");
         for (float[] loopedInput : mArray) {
             System.out.print("{");
